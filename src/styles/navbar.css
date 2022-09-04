@@ -1,0 +1,211 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+header * {
+  transition: 300ms;
+}
+
+.header__logo,
+.header-logo {
+  height: 3em;
+  cursor: pointer;
+  width: 100px;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-family: Arial;
+  position: relative;
+  padding: 0 1em;
+}
+
+header input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0.9em 0.9em 0.9em 1.3em;
+  width: 100%;
+  font: inherit;
+  line-height: 1;
+}
+
+header button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  line-height: 1;
+}
+
+.header__search {
+  background-color: #f1f1f2;
+  border-radius: 100px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 0.9em;
+  width: 330px;
+}
+
+.header__search button {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #808080;
+  border-left: 1px solid rgba(22, 24, 35, 0.03);
+  padding: 0.6em 1em 0.6em 0.6em;
+  cursor: pointer;
+}
+
+.header__search button:hover {
+  background-color: rgba(22, 24, 35, 0.03);
+}
+
+.header__upload-btn {
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  align-self: stretch;
+  padding: 0.6em 1.3em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.header__upload-btn:hover {
+  background-color: rgba(22, 24, 35, 0.03);
+}
+
+.header__block-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__profile_section {
+  display: none;
+  align-items: center;
+}
+
+.header__btn-login {
+  background-color: #ff6e91;
+  color: #fff;
+  border-radius: 0.5em;
+  padding: 0.6em 1.3em;
+  cursor: pointer;
+  border: 1px solid #ff6e91;
+  margin-left: 20px;
+}
+
+.header__btn-login:hover {
+  background-color: #ff5b81;
+  border: 1px solid #ff5b81;
+}
+
+.header__chat-icon img {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.header__profile-avatar {
+  display: block;
+  cursor: pointer;
+}
+
+.header__profile-avatar,
+.header__profile-avatar img {
+  width: 2em;
+  width: 2em;
+}
+
+.header__profile_section > div {
+  margin-right: 0.8em;
+  margin-left: 1.2em;
+}
+
+.modal-profile {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  right: 0;
+}
+
+header .modal-profile ul {
+  padding: 0.5em 0;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+header .modal-profile li a {
+  padding: 0.4em 1em;
+  display: block;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+header .modal-profile li a:hover {
+  background-color: #f6f8ff;
+}
+
+.modal-profile {
+  display: none;
+}
+
+.user:hover ~ .modal-profile,
+.modal-profile:hover {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header__search {
+    display: none;
+  }
+
+  .header__upload-btn span {
+    display: none;
+  }
+
+  .header__profile-avatar:hover~.modal-profile,
+  .modal-profile:hover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 70px;
+  }
+
+  header .container {
+    font-size: 18px;
+  }
+}

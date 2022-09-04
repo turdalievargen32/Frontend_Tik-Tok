@@ -1,0 +1,167 @@
+.postDetailsPage {
+  width: 100%;
+  position: relative;
+}
+
+.postDetailsPage__main .container {
+  display: flex;
+}
+.postDetailsPage {
+  margin-left: 300px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.postDetail__top {
+  height: 30vh;
+  position: relative;
+}
+.postDetail__top video {
+  height: 100%;
+}
+
+.postDetail__top>video:hover~.postDetail__back-btn,
+.postDetail__back-btn:hover {
+  display: flex;
+}
+
+.postDetail__back-btn {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #FFFFFF40;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.postDetail__descr {
+  margin: 0 20px;
+}
+
+.postDetail__top {
+  margin: 20px 20px 0;
+}
+
+
+.postDetail__header>a {
+  display: flex;
+  margin: 20px 20px 10px;
+}
+
+.postDetail__header_avatar,
+.postDetail__header_avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.comment-block__send-block {
+  width: 100%;
+  padding: 13px 16px;
+  background-color: #FFF;
+  border-top: 0.5px solid rgba(22, 24, 35, 0.12);
+}
+
+
+
+.comment-block__send_input__block {
+  white-space: pre-wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-block__send_input__block input {
+  background-color: rgba(22, 24, 35, 0.06);
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  outline: 0;
+  width: calc(100% - 3em);
+}
+
+.comment-block__send_input__block button {
+  border: 0;
+  background-color: transparent;
+}
+
+.postDetail__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.postDetail_username {
+  font-weight: 700;
+}
+
+
+.comment__block {
+  display: flex;
+  margin: 15px 0;
+}
+
+.postDetail__comments {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 60px;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.comment__right-block,
+.comment__right-block img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.comment__right-block,
+.postDetail__header_avatar {
+  margin-right: 10px;
+}
+.postDetail__header > a {
+  cursor: pointer;
+}
+
+.comment__username {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.comment__text {
+  font-size: 15px;
+}
+
+.comment__left-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__time {
+  justify-self: end;
+  font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 1070px) {
+  .postDetailsPage__main .container {
+    padding: 0;
+  }
+  .postDetailsPage {
+    margin-left: 70px;
+  }
+}
